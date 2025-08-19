@@ -3,10 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
     <title>Document</title>
     <style>
       body {
         font-family: "Poppins", sans-serif;
+      }
+      main {
+        max-width: 85%;
+        margin: 0px auto;
+      }
+
+      main h1 {
+        word-spacing: 5px;
+        font-size: 45px;
+        line-height: 65px;
+      }
+      main p {
+        font-weight: 400px;
+        font-size: 17px;
+        color: gray;
+        padding-top: 10px;
+        line-height: 40px;
+      }
+      main > div:nth-child(1) div {
+        display: flex;
+        gap: 50px;
+        margin-top: 40px;
+        align-items: center;
+      }
+      main > div:nth-child(1) div button {
+        padding: 10px 50px;
+        background-color: rgb(243, 243, 23);
+        border: none;
+        border-radius: 15px;
       }
     </style>
   </head>
@@ -27,16 +64,31 @@
       </div>
     </div>
 
+    <main
+      class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+    >
+      <div>
+        <h1>
+          Get your Dream <span class="d-block">job Fast and build </span>your
+          <span style="color: rgb(131, 7, 248)">career</span>
+        </h1>
+        <p>
+          choose a job you love, and you will never have to
+          <span class="d-block">work a day in your life</span>
+        </p>
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <button>Your Jobs</button>
+          <h6 class="pt-2">How to Apply</h6>
+        </div>
+      </div>
+      <div>
+        <img src="./studentlove_assets/assets/g-img.jpeg" alt="" />
+      </div>
+    </main>
 
-
-
-
-
-
-    <!--shjdbfhjksbvhjsdvcjh-->
     <div class="md:w-[85%] w-[95%] mx-[auto]">
       <h1 class="text-[25px] font-bold">The Jobs</h1>
-      <div class="flex flex-col md:flex-row gap-[20px] mt-[20px]">
+      <div class="flex flex-col md:flex-row justify-between mt-[20px]">
         <div class="bg-[#04445a] p-[35px] rounded-[10px] md:w-[450px]">
           <img src="./images/amazon.png" alt="" />
           <h1 class="text-[35px] text-[#fff] font-bold pt-[25px]">
